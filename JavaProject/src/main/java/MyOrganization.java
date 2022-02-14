@@ -1,14 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+package com.aa.act.interview.org;
 
-/**
- *
- * @author crossfire19
- */
 public class MyOrganization extends Organization {
-    
+
+	@Override
 	protected Position createOrganization() {
 		Position ceo = new Position("CEO");
 		Position pres = new Position("President");
@@ -52,5 +46,4 @@ public class MyOrganization extends Organization {
 		myOrg.hire(new Name("Slick", "Willie"), "Salesperson");
 		System.out.println(myOrg);
 	}
-    
 }
